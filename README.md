@@ -156,7 +156,8 @@ M-ReaderApp/
 ## 📧 联系方式
 
 - GitHub Issues: [提交问题](https://github.com/Guyzn/Zozek_Reader_for_Intel_Mac/issues)
-- 电子邮件: [待补充]
+- 电子邮件: guyznhastings@gmail.com
+- 微信公众号：阻只Zozek
 
 ---
 
