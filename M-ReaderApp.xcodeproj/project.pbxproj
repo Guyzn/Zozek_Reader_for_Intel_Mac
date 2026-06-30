@@ -1,0 +1,461 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		000000000000000000000301 /* MReaderApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000101 /* MReaderApp.swift */; };
+		000000000000000000000302 /* MContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000102 /* MContentView.swift */; };
+		00000000000000000000031C /* BookDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000000000011C /* BookDocument.swift */; };
+		00000000000000000000031D /* PlaybackState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000000000011D /* PlaybackState.swift */; };
+		00000000000000000000031E /* BookParserProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000000000011E /* BookParserProtocol.swift */; };
+		000000000000000000000304 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000104 /* Book.swift */; };
+		000000000000000000000305 /* MChapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000105 /* MChapter.swift */; };
+		000000000000000000000306 /* MBookmark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000106 /* MBookmark.swift */; };
+		000000000000000000000308 /* MEPUBParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000108 /* MEPUBParser.swift */; };
+		000000000000000000000309 /* MTXTParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000109 /* MTXTParser.swift */; };
+		00000000000000000000030B /* MReaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000000000010B /* MReaderView.swift */; };
+		00000000000000000000030C /* MLibraryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000000000010C /* MLibraryView.swift */; };
+		00000000000000000000030D /* MChapterListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000000000010D /* MChapterListView.swift */; };
+		00000000000000000000030E /* MControlPanelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000000000010E /* MControlPanelView.swift */; };
+		00000000000000000000030F /* MBookmarkListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000000000010F /* MBookmarkListView.swift */; };
+		000000000000000000000310 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000201 /* Assets.xcassets */; };
+		000000000000000000000311 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000203 /* Preview Assets.xcassets */; };
+		000000000000000000000312 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 000000000000000000000401 /* SwiftUI.framework */; };
+		000000000000000000000313 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 000000000000000000000402 /* AVFoundation.framework */; };
+		000000000000000000000314 /* UniformTypeIdentifiers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 000000000000000000000403 /* UniformTypeIdentifiers.framework */; };
+		000000000000000000000315 /* MDOCXParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000110 /* MDOCXParser.swift */; };
+		00000000000000000000031F /* TTSManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000000000011F /* TTSManager.swift */; };
+		000000000000000000000320 /* StorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000120 /* StorageService.swift */; };
+		000000000000000000000321 /* LibraryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000121 /* LibraryViewModel.swift */; };
+		000000000000000000000322 /* PlayerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000122 /* PlayerViewModel.swift */; };
+		000000000000000000000323 /* VoiceRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000123 /* VoiceRule.swift */; };
+		000000000000000000000324 /* GlobalHotkeyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000124 /* GlobalHotkeyManager.swift */; };
+		000000000000000000000325 /* SearchResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000125 /* SearchResultView.swift */; };
+		000000000000000000000326 /* SecurityScopedBookmarkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000126 /* SecurityScopedBookmarkService.swift */; };
+		000000000000000000000327 /* StringQuoteDetection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000127 /* StringQuoteDetection.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		000000000000000000000101 /* MReaderApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MReaderApp.swift; sourceTree = "<group>"; };
+		000000000000000000000102 /* MContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MContentView.swift; sourceTree = "<group>"; };
+		000000000000000000000104 /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
+		000000000000000000000105 /* MChapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MChapter.swift; sourceTree = "<group>"; };
+		000000000000000000000106 /* MBookmark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBookmark.swift; sourceTree = "<group>"; };
+		000000000000000000000108 /* MEPUBParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MEPUBParser.swift; sourceTree = "<group>"; };
+		000000000000000000000109 /* MTXTParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTXTParser.swift; sourceTree = "<group>"; };
+		00000000000000000000010B /* MReaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MReaderView.swift; sourceTree = "<group>"; };
+		00000000000000000000010C /* MLibraryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MLibraryView.swift; sourceTree = "<group>"; };
+		00000000000000000000010D /* MChapterListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MChapterListView.swift; sourceTree = "<group>"; };
+		00000000000000000000010E /* MControlPanelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MControlPanelView.swift; sourceTree = "<group>"; };
+		00000000000000000000010F /* MBookmarkListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBookmarkListView.swift; sourceTree = "<group>"; };
+		000000000000000000000110 /* MDOCXParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MDOCXParser.swift; sourceTree = "<group>"; };
+		00000000000000000000011C /* BookDocument.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookDocument.swift; sourceTree = "<group>"; };
+		00000000000000000000011D /* PlaybackState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaybackState.swift; sourceTree = "<group>"; };
+		00000000000000000000011E /* BookParserProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookParserProtocol.swift; sourceTree = "<group>"; };
+		00000000000000000000011F /* TTSManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TTSManager.swift; sourceTree = "<group>"; };
+		000000000000000000000120 /* StorageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageService.swift; sourceTree = "<group>"; };
+		000000000000000000000121 /* LibraryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryViewModel.swift; sourceTree = "<group>"; };
+		000000000000000000000122 /* PlayerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerViewModel.swift; sourceTree = "<group>"; };
+		000000000000000000000123 /* VoiceRule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceRule.swift; sourceTree = "<group>"; };
+		000000000000000000000124 /* GlobalHotkeyManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalHotkeyManager.swift; sourceTree = "<group>"; };
+		000000000000000000000125 /* SearchResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultView.swift; sourceTree = "<group>"; };
+		000000000000000000000126 /* SecurityScopedBookmarkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecurityScopedBookmarkService.swift; sourceTree = "<group>"; };
+		000000000000000000000127 /* StringQuoteDetection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringQuoteDetection.swift; sourceTree = "<group>"; };
+		000000000000000000000201 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		000000000000000000000203 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		000000000000000000000204 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		000000000000000000000205 /* M_ReaderApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = M_ReaderApp.entitlements; sourceTree = "<group>"; };
+		000000000000000000000401 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		000000000000000000000402 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		000000000000000000000403 /* UniformTypeIdentifiers.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UniformTypeIdentifiers.framework; path = System/Library/Frameworks/UniformTypeIdentifiers.framework; sourceTree = SDKROOT; };
+		000000000000000000000007 /* M-ReaderApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "M-ReaderApp.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		00000000000000000000000D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				000000000000000000000312 /* SwiftUI.framework in Frameworks */,
+				000000000000000000000313 /* AVFoundation.framework in Frameworks */,
+				000000000000000000000314 /* UniformTypeIdentifiers.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		000000000000000000000002 = {
+			isa = PBXGroup;
+			children = (
+				000000000000000000000004 /* M-ReaderApp */,
+				000000000000000000000003 /* Products */,
+				000000000000000000000006 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		000000000000000000000003 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				000000000000000000000007 /* M-ReaderApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		000000000000000000000004 /* M-ReaderApp */ = {
+			isa = PBXGroup;
+			children = (
+				00000000000000000000011C /* BookDocument.swift */,
+				00000000000000000000011D /* PlaybackState.swift */,
+				00000000000000000000011E /* BookParserProtocol.swift */,
+				00000000000000000000011F /* TTSManager.swift */,
+				000000000000000000000120 /* StorageService.swift */,
+				000000000000000000000121 /* LibraryViewModel.swift */,
+				000000000000000000000122 /* PlayerViewModel.swift */,
+				000000000000000000000123 /* VoiceRule.swift */,
+				000000000000000000000124 /* GlobalHotkeyManager.swift */,
+				000000000000000000000125 /* SearchResultView.swift */,
+				000000000000000000000126 /* SecurityScopedBookmarkService.swift */,
+				000000000000000000000127 /* StringQuoteDetection.swift */,
+				000000000000000000000101 /* MReaderApp.swift */,
+				000000000000000000000102 /* MContentView.swift */,
+				000000000000000000000104 /* Book.swift */,
+				000000000000000000000105 /* MChapter.swift */,
+				000000000000000000000106 /* MBookmark.swift */,
+				000000000000000000000108 /* MEPUBParser.swift */,
+				000000000000000000000109 /* MTXTParser.swift */,
+				00000000000000000000010B /* MReaderView.swift */,
+				00000000000000000000010C /* MLibraryView.swift */,
+				00000000000000000000010D /* MChapterListView.swift */,
+				00000000000000000000010E /* MControlPanelView.swift */,
+				00000000000000000000010F /* MBookmarkListView.swift */,
+				000000000000000000000110 /* MDOCXParser.swift */,
+				000000000000000000000201 /* Assets.xcassets */,
+				000000000000000000000202 /* Preview Content */,
+				000000000000000000000204 /* Info.plist */,
+				000000000000000000000205 /* M_ReaderApp.entitlements */,
+			);
+			path = "M-ReaderApp";
+			sourceTree = "<group>";
+		};
+		000000000000000000000006 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				000000000000000000000401 /* SwiftUI.framework */,
+				000000000000000000000402 /* AVFoundation.framework */,
+				000000000000000000000403 /* UniformTypeIdentifiers.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		000000000000000000000202 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				000000000000000000000203 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		000000000000000000000008 /* M-ReaderApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 000000000000000000000009 /* Build configuration list for PBXNativeTarget "M-ReaderApp" */;
+			buildPhases = (
+				00000000000000000000000B /* Sources */,
+				00000000000000000000000D /* Frameworks */,
+				00000000000000000000000C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "M-ReaderApp";
+			productName = "M-ReaderApp";
+			productReference = 000000000000000000000007 /* M-ReaderApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		000000000000000000000001 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					000000000000000000000008 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = 00000000000000000000000A /* Build configuration list for PBXProject "M-ReaderApp" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = "zh-CN";
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				zhCN,
+			);
+			mainGroup = 000000000000000000000002;
+			productRefGroup = 000000000000000000000003 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				000000000000000000000008 /* M-ReaderApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		00000000000000000000000C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				000000000000000000000310 /* Assets.xcassets in Resources */,
+				000000000000000000000311 /* Preview Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		00000000000000000000000B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				000000000000000000000301 /* MReaderApp.swift in Sources */,
+				000000000000000000000302 /* MContentView.swift in Sources */,
+				00000000000000000000031C /* BookDocument.swift in Sources */,
+				00000000000000000000031D /* PlaybackState.swift in Sources */,
+				00000000000000000000031E /* BookParserProtocol.swift in Sources */,
+				00000000000000000000031F /* TTSManager.swift in Sources */,
+				000000000000000000000320 /* StorageService.swift in Sources */,
+				000000000000000000000321 /* LibraryViewModel.swift in Sources */,
+				000000000000000000000322 /* PlayerViewModel.swift in Sources */,
+				000000000000000000000304 /* Book.swift in Sources */,
+				000000000000000000000305 /* MChapter.swift in Sources */,
+				000000000000000000000306 /* MBookmark.swift in Sources */,
+				000000000000000000000308 /* MEPUBParser.swift in Sources */,
+				000000000000000000000309 /* MTXTParser.swift in Sources */,
+				00000000000000000000030B /* MReaderView.swift in Sources */,
+				00000000000000000000030C /* MLibraryView.swift in Sources */,
+				00000000000000000000030D /* MChapterListView.swift in Sources */,
+				00000000000000000000030E /* MControlPanelView.swift in Sources */,
+				00000000000000000000030F /* MBookmarkListView.swift in Sources */,
+				000000000000000000000315 /* MDOCXParser.swift in Sources */,
+				000000000000000000000323 /* VoiceRule.swift in Sources */,
+				000000000000000000000324 /* GlobalHotkeyManager.swift in Sources */,
+				000000000000000000000325 /* SearchResultView.swift in Sources */,
+				000000000000000000000326 /* SecurityScopedBookmarkService.swift in Sources */,
+				000000000000000000000327 /* StringQuoteDetection.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		000000000000000000000501 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "M-ReaderApp/M_ReaderApp.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"M-ReaderApp/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "M-ReaderApp/Info.plist";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.books";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.readerapp.MReaderApp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SUPPORTED_PLATFORMS = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "";
+			};
+			name = Debug;
+		};
+		000000000000000000000502 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "M-ReaderApp/M_ReaderApp.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"M-ReaderApp/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "M-ReaderApp/Info.plist";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.books";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.readerapp.MReaderApp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SUPPORTED_PLATFORMS = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "";
+			};
+			name = Release;
+		};
+		000000000000000000000503 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		000000000000000000000504 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		000000000000000000000009 /* Build configuration list for PBXNativeTarget "M-ReaderApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				000000000000000000000501 /* Debug */,
+				000000000000000000000502 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		00000000000000000000000A /* Build configuration list for PBXProject "M-ReaderApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				000000000000000000000503 /* Debug */,
+				000000000000000000000504 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 000000000000000000000001 /* Project object */;
+}
